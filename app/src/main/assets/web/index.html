@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>test</title>
+        <script>
+            function hello(){
+                alert("android调用js方法成功了！");
+            }
+
+            function sum(a,b){
+                return a + b;
+            }
+
+            function openAndroidCamera(){
+                androidTest.hello();
+            }
+
+            function render(path){
+                document.getElementById("photo").src = path;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <p>123</p>
+            <p>123</p>
+            <p>Hello World!</p>
+            <p>html</p>
+            <button id="androidCamera"  type="button" onclick="openAndroidCamera();">调用android系统摄像头</button>
+            <img src="" id="photo"/>
+        </div>
+    </body>
+</html>
